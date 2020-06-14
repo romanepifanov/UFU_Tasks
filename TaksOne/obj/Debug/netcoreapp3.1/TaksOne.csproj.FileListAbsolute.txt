@@ -1,0 +1,13 @@
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.exe
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.deps.json
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.runtimeconfig.json
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.runtimeconfig.dev.json
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.dll
+C:\Users\romane\source\repos\TaksOne\TaksOne\bin\Debug\netcoreapp3.1\TaksOne.pdb
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.csprojAssemblyReference.cache
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.csproj.CoreCompileInputs.cache
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.AssemblyInfoInputs.cache
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.AssemblyInfo.cs
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.dll
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.pdb
+C:\Users\romane\source\repos\TaksOne\TaksOne\obj\Debug\netcoreapp3.1\TaksOne.genruntimeconfig.cache

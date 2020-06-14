@@ -1,0 +1,13 @@
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.exe
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.deps.json
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.runtimeconfig.json
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.runtimeconfig.dev.json
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.dll
+C:\Users\romane\source\repos\TaksOne\TaskTwo\bin\Debug\netcoreapp3.1\TaskTwo.pdb
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.csprojAssemblyReference.cache
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.csproj.CoreCompileInputs.cache
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.AssemblyInfoInputs.cache
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.AssemblyInfo.cs
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.dll
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.pdb
+C:\Users\romane\source\repos\TaksOne\TaskTwo\obj\Debug\netcoreapp3.1\TaskTwo.genruntimeconfig.cache
