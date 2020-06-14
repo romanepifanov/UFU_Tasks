@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj": {}
+    "c:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj": {
+    "c:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj",
+        "projectUniqueName": "c:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj",
         "projectName": "TaskTwo",
-        "projectPath": "C:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj",
+        "projectPath": "c:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\TaskTwo.csproj",
         "packagesPath": "C:\\Users\\romane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\obj\\",
+        "outputPath": "c:\\Users\\romane\\source\\repos\\TaksOne\\TaskTwo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
