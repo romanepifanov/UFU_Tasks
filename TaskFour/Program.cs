@@ -1,4 +1,5 @@
 ﻿using System;
+using TaskFour.Controllers;
 
 namespace TaskFour
 {
@@ -6,6 +7,9 @@ namespace TaskFour
     {
         static void Main()
         {
+            ConsoleController consoleController = new ConsoleController();
+
+            consoleController.Init();
         }
     }
 }
