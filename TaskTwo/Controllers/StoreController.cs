@@ -11,7 +11,7 @@ namespace TaskTwo.Controllers
 
         public SellController() { }
 
-        public void AddCar(Car car) {
+        public void SellCar(Car car) {
             cars.Add(car);
         }
 
