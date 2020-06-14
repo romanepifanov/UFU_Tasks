@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace TaksOne.Models
+namespace TaskOne.Models
 {
     class Car
     {

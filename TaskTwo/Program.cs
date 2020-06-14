@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using TaksTwo.Models;
+using TaskTwo.Models;
 using TaskTwo.Controllers;
 
 namespace TaskTwo

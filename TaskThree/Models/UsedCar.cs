@@ -1,4 +1,4 @@
-﻿namespace TaksThree.Models
+﻿namespace TaskThree.Models
 {
     class UsedCar: Car
     {

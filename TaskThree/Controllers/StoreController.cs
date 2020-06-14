@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaksThree.Models;
+using TaskThree.Models;
 
-namespace TaksThree.Controllers
+namespace TaskThree.Controllers
 {
     class SellController
     {

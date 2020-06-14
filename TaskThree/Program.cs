@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
-using TaksThree.Controllers;
-using TaksThree.Models;
+using TaskThree.Controllers;
+using TaskThree.Models;
 
 namespace TaskThree
 {

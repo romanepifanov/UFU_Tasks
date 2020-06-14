@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TaksThree.Models
+namespace TaskThree.Models
 {
     class Car
     {
