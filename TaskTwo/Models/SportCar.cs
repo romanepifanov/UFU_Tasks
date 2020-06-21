@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TaskTwo.Models;
-
-namespace TaskTwo.Models
+﻿namespace TaskTwo.Models
 {
     class SportCar: Car
     {
@@ -11,11 +6,20 @@ namespace TaskTwo.Models
         public string EngineDisplacement { get; set; }
         public string Power { get; set; }
 
-        public SportCar(Car car, string seconds, string engineDisplacement, string power) : base(car)
+        public override string ToString()
         {
-            this.Seconds = seconds;
-            this.EngineDisplacement = engineDisplacement;
-            this.Power = power;
+            return @$"
+                    Разгон до 100 км/час: {this.Seconds}
+                    Объем двигателя: {this.EngineDisplacement}
+                    Мощность: {this.Power}
+                    Марка автомобиля: {this.Model}
+                    Год выпуска: {this.IssueYear}
+                    Цена автомобиля: {this.Price}
+                    Комплектация: {this.Equipment}
+                    Страна производитель: {this.ProducingCountry}
+                    Дата продажи: {this.SaleDate.ToString()}
+                    ФИО покупателя: {this.Buyer}
+                    ";
         }
     }
 }

@@ -12,9 +12,42 @@ namespace TaskTwo
             Console.OutputEncoding = Encoding.UTF8;
 
             SellController sellController = new SellController();
-            Car car = new Car("Ford Focus II", 2007, "245 000 руб", "Хэтчбек 5 дв.", "Россия");
-            Car car1 = new Car("Audi", 2011, "600 000 руб", "Хэтчбек 5 дв.", "Россия");
-            Car car2 = new Car("daewoo nexia", 2011, "200 000 руб", "Хэтчбек 5 дв.", "Россия");
+            Car car = new Car()
+            {
+                Model = "Ford Focus II",
+                IssueYear = 2007,
+                Price = "245 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            };
+            Car car1 = new SportCar()
+            {
+                Seconds = "5",
+                EngineDisplacement = "5 литров",
+                Power = "200 лошадиных сил",
+                Model = "Ford Focus II",
+                IssueYear = 2007,
+                Price = "245 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            };
+            Car car2 = new UsedCar()
+            {
+                SafetyDegree = "Не битая",
+                Owner = "Петров Петр Петрович",
+                Mileage = "100 000 км",
+                Model = "Ford Focus II",
+                IssueYear = 2007,
+                Price = "245 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            };
 
             sellController.SellCar(car);
             sellController.SellCar(car1);

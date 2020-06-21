@@ -12,17 +12,6 @@ namespace TaskTwo.Models
         public DateTime? SaleDate { get; set; }
         public string Buyer { get; set; }
 
-        public Car(string model, int issueYear, string price, string equipment, string producingCountry)
-        {
-            this.Model = model;
-            this.IssueYear = issueYear;
-            this.Price = price;
-            this.Equipment = equipment;
-            this.ProducingCountry = producingCountry;
-        }
-
-        public Car(Car car) : this(car.Model, car.IssueYear, car.Price, car.Equipment, car.ProducingCountry) { }
-
         public override string ToString()
         {
             return @$"

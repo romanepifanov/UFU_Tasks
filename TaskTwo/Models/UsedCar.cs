@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TaskTwo.Models;
-
-namespace TaskTwo.Models
+﻿namespace TaskTwo.Models
 {
     class UsedCar: Car
     {
@@ -11,11 +6,20 @@ namespace TaskTwo.Models
         public string Owner { get; set; }
         public string Mileage { get; set; }
 
-        public UsedCar(Car car, string safetyDegree, string owner, string mileage) : base(car)
+        public override string ToString()
         {
-            this.SafetyDegree = safetyDegree;
-            this.Owner = owner;
-            this.Mileage = mileage;
+            return @$"
+                    Состояние: {this.SafetyDegree}
+                    ФИО хозяина: {this.Owner}
+                    Пробег: {this.Mileage}
+                    Марка автомобиля: {this.Model}
+                    Год выпуска: {this.IssueYear}
+                    Цена автомобиля: {this.Price}
+                    Комплектация: {this.Equipment}
+                    Страна производитель: {this.ProducingCountry}
+                    Дата продажи: {this.SaleDate.ToString()}
+                    ФИО покупателя: {this.Buyer}
+                    ";
         }
     }
 }
