@@ -2,15 +2,24 @@
 {
     class SpecialCar : Car
     {
-        public string Kind { get; set;}
+        public string Kind { get; set; }
         public string Weight { get; set; }
         public string OverallDimensions { get; set; }
 
-        public SpecialCar(Car car, string kind, string weight, string overallDimensions) : base(car)
+        public override string ToString()
         {
-            this.Kind = kind;
-            this.Weight = weight;
-            this.OverallDimensions = overallDimensions;
+            return @$"
+                    Вид: {this.Kind}
+                    Масса: {this.Weight}
+                    Габаритные размеры: {this.OverallDimensions}
+                    Марка автомобиля: {this.Model}
+                    Год выпуска: {this.IssueYear}
+                    Цена автомобиля: {this.Price}
+                    Комплектация: {this.Equipment}
+                    Страна производитель: {this.ProducingCountry}
+                    Дата продажи: {this.SaleDate.ToString()}
+                    ФИО покупателя: {this.Buyer}
+                    ";
         }
     }
 }

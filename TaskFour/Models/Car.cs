@@ -12,19 +12,6 @@ namespace TaskFour.Models
         public DateTime? SaleDate { get; set; }
         public string Buyer { get; set; }
 
-        public Car(string model, int issueYear, string price, string equipment, string producingCountry, string buyer)
-        {
-            this.Model = model;
-            this.IssueYear = issueYear;
-            this.Price = price;
-            this.Equipment = equipment;
-            this.ProducingCountry = producingCountry;
-            this.SaleDate = DateTime.Now;
-            this.Buyer = buyer;
-        }
-
-        public Car(Car car) : this(car.Model, car.IssueYear, car.Price, car.Equipment, car.ProducingCountry, car.Buyer) { }
-
         public override string ToString()
         {
             return @$"
@@ -37,5 +24,6 @@ namespace TaskFour.Models
                     ФИО покупателя: {this.Buyer}
                     ";
         }
+
     }
 }
