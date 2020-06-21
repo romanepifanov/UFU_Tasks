@@ -1,16 +1,25 @@
 ﻿namespace TaskThree.Models
 {
-    class SportCar: Car
+    class SportCar : Car
     {
-        public string Seconds { get; set;}
+        public string Seconds { get; set; }
         public string EngineDisplacement { get; set; }
         public string Power { get; set; }
 
-        public SportCar(Car car, string seconds, string engineDisplacement, string power) : base(car)
+        public override string ToString()
         {
-            this.Seconds = seconds;
-            this.EngineDisplacement = engineDisplacement;
-            this.Power = power;
+            return @$"
+                    Разгон до 100 км/час: {this.Seconds}
+                    Объем двигателя: {this.EngineDisplacement}
+                    Мощность: {this.Power}
+                    Марка автомобиля: {this.Model}
+                    Год выпуска: {this.IssueYear}
+                    Цена автомобиля: {this.Price}
+                    Комплектация: {this.Equipment}
+                    Страна производитель: {this.ProducingCountry}
+                    Дата продажи: {this.SaleDate.ToString()}
+                    ФИО покупателя: {this.Buyer}
+                    ";
         }
     }
 }

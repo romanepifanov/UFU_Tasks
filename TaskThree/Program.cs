@@ -11,13 +11,46 @@ namespace TaskThree
         {
             Console.OutputEncoding = Encoding.UTF8;
             SellController sellController = new SellController();
+            sellController.SellCar(new Car()
+            {
+                Model = "Ford Focus II",
+                IssueYear = 2008,
+                Price = "275 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            });
+            sellController.SellCar(new SportCar()
+            {
+                Seconds = "5",
+                EngineDisplacement = "5 литров",
+                Power = "200 лошадиных сил",
+                Model = "Ford Focus III",
+                IssueYear = 2007,
+                Price = "245 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            });
+            sellController.SellCar(new UsedCar()
+            {
+                SafetyDegree = "Не битая",
+                Owner = "Петров Петр Петрович",
+                Mileage = "100 000 км",
+                Model = "Ford Focus I",
+                IssueYear = 2009,
+                Price = "300 000 руб",
+                Equipment = "Хэтчбек 5 дв.",
+                ProducingCountry = "Россия",
+                SaleDate = DateTime.Now,
+                Buyer = "Иванов Иван Иванович"
+            });
 
-            sellController.SellCar(new Car("Ford Focus II", 2007, "245 000 руб", "Хэтчбек 5 дв.", "Россия"));
-            sellController.SellCar(new Car("Audi", 2011, "600 000 руб", "Хэтчбек 5 дв.", "Россия"));
-            sellController.SellCar(new Car("Daewoo nexia", 2011, "200 000 руб", "Хэтчбек 5 дв.", "Россия"));
             sellController.PrintList();
 
-            Console.WriteLine("--------------------------------"); 
+            Console.WriteLine("--------------------------------");
             sellController.ModelOrderByAscending();
             sellController.PrintList();
 
