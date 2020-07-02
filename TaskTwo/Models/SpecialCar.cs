@@ -1,6 +1,4 @@
-﻿using TaskTwo.Models;
-
-namespace TaskTwo.Models
+﻿namespace TaskTwo.Models
 {
     class SpecialCar : Car
     {

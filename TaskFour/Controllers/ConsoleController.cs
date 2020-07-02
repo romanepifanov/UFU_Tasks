@@ -29,10 +29,10 @@ namespace TaskFour.Controllers
             Console.WriteLine("->> Продать поддержанный автомобиль");
             Console.WriteLine("->> Продать специальный автомобиль");
             Console.WriteLine("->> Показать проданные автомобили");
-            Console.WriteLine("->> Отсортирвовать по моделе А-Я");
-            Console.WriteLine("->> Отсортирвовать по моделе Я-А");
-            Console.WriteLine("->> Отсортирвовать по цене А-Я");
-            Console.WriteLine("->> Отсортирвовать по цене Я-А");
+            Console.WriteLine("->> Отсортировать по моделе А-Я");
+            Console.WriteLine("->> Отсортировать по моделе Я-А");
+            Console.WriteLine("->> Отсортировать по цене А-Я");
+            Console.WriteLine("->> Отсортировать по цене Я-А");
             Console.WriteLine("->> Помощь");
             Console.ForegroundColor = ConsoleColor.White;
             CheckCommand();
@@ -83,9 +83,9 @@ namespace TaskFour.Controllers
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Введите данные через запятую пример: марка, год производства, цена, описание, страна производства, ФИО покапутеля");
+            Console.WriteLine("Введите данные через запятую пример: марка, год производства, цена, описание, страна производства, Дата продажи, ФИО покапутеля");
             Console.ForegroundColor = ConsoleColor.White;
-            this.command = this.ReadLineUTF();
+            this.command = this.GetString();
             Console.ForegroundColor = ConsoleColor.Blue;
 
             try
@@ -117,9 +117,9 @@ namespace TaskFour.Controllers
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Введите данные через запятую пример: Разгон до 100 км/час, Объем двигателя, Мощность, марка, год производства, цена, описание, страна производства, ФИО покапутеля");
+            Console.WriteLine("Введите данные через запятую пример: Разгон до 100 км/час, Объем двигателя, Мощность, марка, год производства, цена, описание, страна производства, Дата продажи, ФИО покапутеля");
             Console.ForegroundColor = ConsoleColor.White;
-            this.command = this.ReadLineUTF();
+            this.command = this.GetString();
             Console.ForegroundColor = ConsoleColor.Blue;
 
             try
@@ -154,9 +154,9 @@ namespace TaskFour.Controllers
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Введите данные через запятую пример: Состояние, ФИО хозяина, Пробег, марка, год производства, цена, описание, страна производства, ФИО покапутеля");
+            Console.WriteLine("Введите данные через запятую пример: Состояние, ФИО хозяина, Пробег, марка, год производства, цена, описание, страна производства, Дата продажи, ФИО покапутеля");
             Console.ForegroundColor = ConsoleColor.White;
-            this.command = this.ReadLineUTF();
+            this.command = this.GetString();
             Console.ForegroundColor = ConsoleColor.Blue;
 
             try
@@ -191,9 +191,9 @@ namespace TaskFour.Controllers
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Введите данные через запятую пример: Вид, Масса, Габаритные размеры, марка, год производства, цена, описание, страна производства, ФИО покапутеля");
+            Console.WriteLine("Введите данные через запятую пример: Вид, Масса, Габаритные размеры, марка, год производства, цена, описание, страна производства, Дата продажи, ФИО покапутеля");
             Console.ForegroundColor = ConsoleColor.White;
-            this.command = this.ReadLineUTF();
+            this.command = this.GetString();
             Console.ForegroundColor = ConsoleColor.Blue;
 
             try
@@ -228,7 +228,7 @@ namespace TaskFour.Controllers
         #region COMMON METHODS
         public void CheckCommand()
         {
-            this.command = this.ReadLineUTF();
+            this.command = this.GetString();
 
             switch (this.command)
             {
@@ -237,36 +237,31 @@ namespace TaskFour.Controllers
                 case "Продать поддержанный автомобиль": this.AddUsedCar(); break;
                 case "Продать специальный автомобиль": this.AddSpecialCar(); break;
                 case "Показать проданные автомобили": this.PrintCarsMessage(); break;
-                case "Отсортирвовать по моделе А-Я": this.PrintModelOrderByAscending(); break;
-                case "Отсортирвовать по моделе Я-А": this.PrintModelOrderByDescending(); break;
-                case "Отсортирвовать по цене А-Я": this.PrintPriceOrderByAscending(); break;
-                case "Отсортирвовать по цене Я-А": this.PrintPriceOrderByDescending(); break;
+                case "Отсортировать по моделе А-Я": this.PrintModelOrderByAscending(); break;
+                case "Отсортировать по моделе Я-А": this.PrintModelOrderByDescending(); break;
+                case "Отсортировать по цене А-Я": this.PrintPriceOrderByAscending(); break;
+                case "Отсортировать по цене Я-А": this.PrintPriceOrderByDescending(); break;
                 case "Помощь": this.ShowHelpMessage(); break;
                 default: Console.WriteLine("Не верная команда"); break;
             }
 
             this.ShowMenu();
         }
-        private string ReadLineUTF()
+        private string GetString()
         {
-            ConsoleKeyInfo currentKey;
-
-            var sBuilder = new StringBuilder();
+            ConsoleKeyInfo currentChar;
+            StringBuilder stringBuilder = new StringBuilder();
             do
             {
-                currentKey = Console.ReadKey();
-                // avoid capturing newline
-                if (currentKey.Key != ConsoleKey.Enter)
-                    sBuilder.Append(currentKey.KeyChar);
-
+                currentChar = Console.ReadKey();
+                if (currentChar.Key != ConsoleKey.Enter) {
+                    stringBuilder.Append(currentChar.KeyChar);
+                }
             }
-            // check if Enter was pressed
-            while (currentKey.Key != ConsoleKey.Enter);
+            while (currentChar.Key != ConsoleKey.Enter);
 
-            // move on the next line
             Console.WriteLine();
-
-            return sBuilder.ToString();
+            return stringBuilder.ToString();
         }
         #endregion COMMON METHODS
     }
