@@ -12,7 +12,7 @@ namespace TaskThree
             Console.OutputEncoding = Encoding.UTF8;
             SellController sellController = new SellController();
             sellController.SellCar(new Car()
-            {   Строительная, 13 600 кг, 2830.0 мм/7620.0 мм/2590.0 мм, Гусеничный экскаватор Cat 313D2 L, 2018, 5 000 000 руб, Удлиненная стрела, США, 06/26/2020, Иванов Иван Иванович
+            {   //Строительная, 13 600 кг, 2830.0 мм/7620.0 мм/2590.0 мм, Гусеничный экскаватор Cat 313D2 L, 2018, 5 000 000 руб, Удлиненная стрела, США, 06/26/2020, Иванов Иван Иванович
                 Model = "Ford Focus II",
                 IssueYear = 2008,
                 Price = "275 000 руб",
